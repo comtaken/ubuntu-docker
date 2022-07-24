@@ -1,4 +1,18 @@
-# ubuntu-docker
+# 説明
+- 前提条件  
+ubuntuがインストール済みであること。  
+gitがインストール済みであること。
+
+# ubuntu-docker  
+- 手順  
+/home/ユーザー/でこのリポジトリをclone  
+$ git clone リポジトリurl  
+  
+  webにアクセスしてhtml/index.htmlが見えているか確認  
+  http://アドレス:1080  
+
+
+# よく使うコマンド  
 - 起動停止  
   コンテナビルド、起動  
   $ docker-compose up -d  
