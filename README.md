@@ -31,7 +31,7 @@ $ git clone リポジトリurl
   
  - コンテナに入る  
   docker exec -it コンテナ名 bash  
-   
+    
 # phpmyadminに接続できない時  
 1. docker exec -it コンテナ名 bash でmysqlのコンテナに入り
 mysqlにログインできるか試す。  
@@ -41,6 +41,6 @@ mysql -h IPアドレス -P 3306 -u root -p
 
 3. 表示確認  
 http://IPアドレス:4040/ 
-
-#その他  
-phpmyadminはサーバー名空白でもログイン出来ました。
+  
+# その他  
+  - phpmyadminはサーバー名空白でもログイン出来ました。
