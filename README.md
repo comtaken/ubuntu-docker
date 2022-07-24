@@ -1,11 +1,11 @@
 # ubuntu-docker
-- 初期化  
+- 起動停止  
   コンテナビルド、起動  
   $ docker-compose up -d  
   
   コンテナ停止、削除  
   $ docker-compose down    
-
+- 初期化  
   コンテナ一掃    
   $ docker rm $(docker ps -aq) --force  
 
@@ -15,6 +15,7 @@
   dockerの管理データを削除  
   .dataの削除  
   
+ - コンテナに入る  
   docker exec -it コンテナ名 bash  
    
 # phpmyadminに接続できない時  
