@@ -3,6 +3,9 @@
 コンテナ停止、削除     
 $ docker-compose down  
 
+コンテナ一掃  
+$ docker rm $(docker ps -aq) --force
+
   image削除  
 $ docker rmi -f  $(docker images -q)  
 
