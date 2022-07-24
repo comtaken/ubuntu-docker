@@ -31,8 +31,8 @@ services:
     environment:
       - PMA_ARBITRARY=1
       - PMA_HOST=mysql #mysqlサービス名を指定
-      - PMA_USER=USER名
-      - PMA_PASSWORD=USERパスワード
+      #- PMA_USER=USER名
+      #- PMA_PASSWORD=USERパスワード
     links:
       - mysql
     ports:
