@@ -25,9 +25,9 @@ services:
 
   phpmyadmin:
     #ラズベリーパイ用
-    image: arm64v8/phpmyadmin
+    #image: arm64v8/phpmyadmin
     #↓公式
-    #image: phpmyadmin/phpmyadmin
+    image: phpmyadmin/phpmyadmin
     environment:
       - PMA_ARBITRARY=1
       - PMA_HOST=mysql #mysqlサービス名を指定
