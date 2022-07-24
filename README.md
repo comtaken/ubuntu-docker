@@ -16,6 +16,9 @@ $ git clone リポジトリurl
 - 起動停止  
   コンテナビルド、起動  
   $ docker-compose up -d  
+    
+- 起動コンテナ確認  
+  $ docker-compose ps
   
   コンテナ停止、削除  
   $ docker-compose down    
