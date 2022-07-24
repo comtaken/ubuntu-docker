@@ -1,5 +1,8 @@
 # ubuntu-docker
 - 初期化  
+  コンテナビルド、起動  
+  $ docker-compose up -d  
+  
   コンテナ停止、削除  
   $ docker-compose down    
 
@@ -12,4 +15,14 @@
   dockerの管理データを削除  
   .dataの削除  
   
-  docker exec -it コンテナ名 bash
+  docker exec -it コンテナ名 bash  
+   
+# phpmyadminに接続できない時  
+1. docker exec -it コンテナ名 bash でmysqlのコンテナに入り
+mysqlにログインできるか試す。  
+
+2. ERROR 2002 (HY000)が返ってきたら  
+mysql -h IPアドレス -P 3306 -u root -p
+
+3. 表示確認  
+http://IPアドレス:4040/ 
