@@ -1,0 +1,41 @@
+version: "3"
+
+services:
+  myapp-web:
+    container_name: myapp-web
+    build:
+      context: ./docker/myapp-web
+      dockerfile: Dockerfile
+    ports:
+      - "1080:80"
+    volumes:
+      - "./html:/var/www/html"
+
+  mysql:
+    image: mysql:8.0
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: P@ssw0rd
+      MYSQL_USER: test
+      MYSQL_PASSWORD: P@ssw0rd
+    ports:
+      - "3306:3306"
+    volumes:
+      - ./.data/mysql:/var/lib/mysql
+
+  phpmyadmin:
+    #ラズベリーパイ用
+    image: arm64v8/phpmyadmin
+    #↓公式
+    #image: phpmyadmin/phpmyadmin
+    environment:
+      - PMA_ARBITRARY=1
+      - PMA_HOST=mysql #mysqlサービス名を指定
+      - PMA_USER=root
+      - PMA_PASSWORD=P@ssw0rd
+    links:
+      - mysql
+    ports:
+      - 4040:80
+    volumes:
+      - ./phpmyadmin/sessions:/sessions
