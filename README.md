@@ -1,15 +1,17 @@
 # 説明
 - 前提条件  
 ubuntuがインストール済みであること。  
+dockerとdockre-composerがインストール済みであること。  
 gitがインストール済みであること。
 
 # ubuntu-docker  
 - 手順  
 /home/ユーザー/でこのリポジトリをclone  
-$ git clone リポジトリurl  
-  
-  webにアクセスしてhtml/index.htmlが見えているか確認  
-  http://アドレス:1080  
+$ git clone リポジトリurl<br><br>
+起動させる<br>
+$ docker-compose up -d<br><br>
+webにアクセスしてhtml/index.htmlが見えているか確認<br> 
+http://アドレス:1080<br>
 
 
 # よく使うコマンド  
