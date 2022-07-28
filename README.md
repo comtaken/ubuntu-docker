@@ -1,4 +1,6 @@
-# 説明
+# 説明  
+- 出来ること  
+Ubuntuにapach2, php8.0, mysql8.0, phpmyadminの環境ができます。<br><br>
 - 前提条件  
 ubuntuがインストール済みであること。  
 dockerとdockre-composerがインストール済みであること。  
