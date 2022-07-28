@@ -1,7 +1,7 @@
 # 説明  
 - 出来ること  
 Ubuntuにapach2, php8.0, mysql8.0, phpmyadminの環境ができます。<br>
-※　Lalavelを使用する場合はhtml内でcloneして、htmlの権限を777にする必要あります。<br><br>
+※　Lalavelを使用する場合はhtml内でcloneして、htmlの権限を変更する必要あります。<br><br>
 - 前提条件  
 ubuntuがインストール済みであること。  
 dockerとdockre-composerがインストール済みであること。  
