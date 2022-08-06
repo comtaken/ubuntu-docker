@@ -4,13 +4,14 @@ Ubuntuにapach2, php8.0, mysql8.0, phpmyadminの環境ができます。<br>
 ※　Lalavelを使用する場合はhtml内でcloneして、htmlの権限を変更する必要あります。<br><br>
 - 前提条件  
 ubuntuがインストール済みであること。    
-gitがインストール済みであること。
 
 # ubuntu-docker  
 - 手順<br>
-1. $ システムログイン<br><br>
-2. $ sudo su -<br><br>
-3. $ ssh-keygen<br><br>
+1. $ sudo su -<br><br>
+2. システムログイン後 gitインストール<br>
+   $ apt-get install git<br><br>
+3. 鍵作成<br>
+   $ ssh-keygen<br><br>
 4. /home/ユーザー/でこのリポジトリをclone  
    $ git clone リポジトリurl<br><br>
 5. ./ubuntu-dockerへ移動<br>
