@@ -25,13 +25,13 @@ http://アドレス:1080<br>
 # よく使うコマンド  
 - 起動停止  
   コンテナビルド、起動  
-  $ docker-compose up -d  
+  $ docker compose up -d  
     
 - 起動コンテナ確認  
-  $ docker-compose ps
+  $ docker compose ps
   
   コンテナ停止、削除  
-  $ docker-compose down    
+  $ docker compose down    
 - 初期化  
   コンテナ一掃    
   $ docker rm $(docker ps -aq) --force  
