@@ -3,16 +3,21 @@
 Ubuntuにapach2, php8.0, mysql8.0, phpmyadminの環境ができます。<br>
 ※　Lalavelを使用する場合はhtml内でcloneして、htmlの権限を変更する必要あります。<br><br>
 - 前提条件  
-ubuntuがインストール済みであること。  
-dockerとdockre-composerがインストール済みであること。  
+ubuntuがインストール済みであること。    
 gitがインストール済みであること。
 
 # ubuntu-docker  
-- 手順  
+- 手順<br>
+$ sudo su -<br><br>
+$ ssh-keygen<br><br>
 /home/ユーザー/でこのリポジトリをclone  
 $ git clone リポジトリurl<br><br>
-起動させる<br>
-$ docker-compose up -d<br><br>
+./ubuntu-dockerへ移動<br>
+$ cd ./ubuntu-docker<br><br>
+スクリプト実行<br>
+$ ./autosetup.sh<br><br>
+docker-compose.ymlの書き換え<br>
+$ vim ./docker-compose.yml<br><br>
 webにアクセスしてhtml/index.htmlが見えているか確認<br> 
 http://アドレス:1080<br>
 
