@@ -8,18 +8,19 @@ gitがインストール済みであること。
 
 # ubuntu-docker  
 - 手順<br>
-$ sudo su -<br><br>
-$ ssh-keygen<br><br>
-/home/ユーザー/でこのリポジトリをclone  
-$ git clone リポジトリurl<br><br>
-./ubuntu-dockerへ移動<br>
-$ cd ./ubuntu-docker<br><br>
-スクリプト実行<br>
-$ ./autosetup.sh<br><br>
-docker-compose.ymlの書き換え<br>
-$ vim ./docker-compose.yml<br><br>
-webにアクセスしてhtml/index.htmlが見えているか確認<br> 
-http://アドレス:1080<br>
+1. $ システムログイン<br><br>
+2. $ sudo su -<br><br>
+3. $ ssh-keygen<br><br>
+4. /home/ユーザー/でこのリポジトリをclone  
+   $ git clone リポジトリurl<br><br>
+5. ./ubuntu-dockerへ移動<br>
+   $ cd ./ubuntu-docker<br><br>
+6. スクリプト実行<br>
+   $ ./autosetup.sh<br><br>
+7. docker-compose.ymlの書き換え<br>
+   $ vim ./docker-compose.yml<br><br>
+8. webにアクセスしてhtml/index.htmlが見えているか確認<br> 
+   http://アドレス:1080<br>
 
 
 # よく使うコマンド  
