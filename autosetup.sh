@@ -17,6 +17,7 @@ if [ -e $file ]; then
 	&& eval sudo chmod +x /usr/local/bin/docker-compose \
 	&& eval sleep 5s \
 	&& eval docker-compose -v \
+	&& eval docker-compose up -d \
         && echo "完了しました。"
 else
         echo "docker-compose.ymlは存在しません"
