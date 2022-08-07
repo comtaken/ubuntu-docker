@@ -33,19 +33,18 @@ ubuntuがインストール済みであること。
 - 起動コンテナ確認  
   $ docker compose ps
   
-  コンテナ停止、削除  
+- コンテナ停止、削除  
   $ docker compose down    
-- 初期化  
-  コンテナ一掃    
+- コンテナ一掃    
   $ docker rm $(docker ps -aq) --force  
 
-  image削除  
+- image削除  
   $ docker rmi -f  $(docker images -q)  
 
-  dockerの管理データを削除  
+- dockerの管理データを削除  
   .dataの削除  
   
- - コンテナに入る  
+- コンテナに入る  
   docker exec -it コンテナ名 bash  
     
 # phpmyadminに接続できない時  
