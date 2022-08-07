@@ -7,8 +7,9 @@ ubuntuがインストール済みであること。
 
 # ubuntu-docker  
 - 手順<br>
+システムログイン後ユーザー変更
 1. $ sudo su -<br><br>
-2. システムログイン後 gitインストール<br>
+2. gitインストール<br>
    $ apt-get install git<br><br>
 3. 鍵作成<br>
    $ ssh-keygen<br><br>
