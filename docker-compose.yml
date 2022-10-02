@@ -16,7 +16,7 @@ services:
     restart: always
     environment:
       MYSQL_ROOT_PASSWORD: ROOTパスワード
-      MYSQL_USER: USER名
+      MYSQL_USER: USER名(root以外)
       MYSQL_PASSWORD: USERパスワード
     ports:
       - "3306:3306"
@@ -31,8 +31,6 @@ services:
     environment:
       - PMA_ARBITRARY=1
       - PMA_HOST=mysql #mysqlサービス名を指定
-      #- PMA_USER=USER名
-      #- PMA_PASSWORD=USERパスワード
     links:
       - mysql
     ports:
