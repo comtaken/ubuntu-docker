@@ -17,10 +17,11 @@ ubuntuがインストール済みであること。
    $ git clone リポジトリurl<br><br>
 5. ./ubuntu-dockerへ移動<br>
    $ cd ./ubuntu-docker<br><br>
-6. スクリプト実行<br>
-   $ ./autosetup.sh<br><br>
-7. docker-compose.ymlの書き換え<br>
+6. docker-compose.ymlの書き換え<br>
    $ vim ./docker-compose.yml<br><br>
+7. スクリプト実行<br>
+   $ ./autosetup.sh<br><br>
+
 8. webにアクセスしてhtml/index.htmlが見えているか確認<br> 
    http://アドレス:1080<br>
 
