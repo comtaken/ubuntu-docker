@@ -16,7 +16,7 @@ ubuntuがインストール済みであること。
   1. /home/ユーザー/でこのリポジトリをclone  
   $ git clone リポジトリurl    
 
-  1. **.gitを削除**  
+  1. **.gitを削除（dockerのビルドで余計な変更履歴が残るためここで管理下から外しておく）**  
    $ rm -rf .git    
    1. ./ubuntu-dockerへ移動  
    $ cd ./ubuntu-docker  
