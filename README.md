@@ -15,14 +15,19 @@ ubuntuがインストール済みであること。
    $ ssh-keygen<br><br>
 4. /home/ユーザー/でこのリポジトリをclone  
    $ git clone リポジトリurl<br><br>
-5. ./ubuntu-dockerへ移動<br>
+   
+5. .gitを削除
+ 
+   $ rm -rf .git
+   
+6. ./ubuntu-dockerへ移動<br>
    $ cd ./ubuntu-docker<br><br>
-6. docker-compose.ymlの書き換え<br>
+7. docker-compose.ymlの書き換え<br>
    $ vim ./docker-compose.yml<br><br>
-7. スクリプト実行<br>
+8. スクリプト実行<br>
    $ ./autosetup.sh<br><br>
 
-8. webにアクセスしてhtml/index.htmlが見えているか確認<br> 
+9. webにアクセスしてhtml/index.htmlが見えているか確認<br> 
    http://アドレス:1080<br>
 
 
