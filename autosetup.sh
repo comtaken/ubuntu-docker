@@ -16,7 +16,7 @@ if [ -e $file ]; then
 	&& eval sudo curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose \
 	&& eval sudo chmod +x /usr/local/bin/docker-compose \
 	&& eval sleep 5s \
-	&& eval docker compose up -d \
+	&& eval docker-compose up -d \
         && echo "完了しました。"
 else
         echo "docker-compose.ymlは存在しません"
