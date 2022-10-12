@@ -48,6 +48,9 @@ ubuntuがインストール済みであること。
 - volum一括削除  
   $ docker volume prune
 
+- キャッシュクリア  
+  $ docker builder prune
+
 - dockerの管理データを削除  
   .dataの削除  
   
