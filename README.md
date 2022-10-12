@@ -44,6 +44,9 @@ ubuntuがインストール済みであること。
 
 - image削除  
   $ docker rmi -f  $(docker images -q)  
+  
+- volum一括削除  
+  $ docker volume prune
 
 - dockerの管理データを削除  
   .dataの削除  
