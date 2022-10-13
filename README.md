@@ -37,6 +37,9 @@ ubuntuがインストール済みであること。
 - 起動コンテナ確認  
   $ docker compose ps
   
+- システム確認
+  $ docker system df
+  
 - コンテナ停止、削除  
   $ docker compose down    
 - コンテナ一掃    
