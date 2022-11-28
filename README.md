@@ -57,8 +57,11 @@ ubuntuがインストール済みであること。
 - dockerの管理データを削除  
   .dataの削除  
   
+- イメージ・ボリューム・コンテナ・ネットワーク全消し  
+  docker system prune
+  
 - コンテナに入る  
-  docker exec -it コンテナ名 bash  
+  $ docker exec -it コンテナ名 bash  
 
   ---
 
