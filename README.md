@@ -63,6 +63,7 @@ ubuntuがインストール済みであること。
 - コンテナに入る  
   $ docker exec -it コンテナ名 bash  
   $ docker exec -it コンテナ名 sh  
+  
   ---
 
 # phpmyadminに接続できない時  
