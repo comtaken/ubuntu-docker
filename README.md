@@ -62,7 +62,15 @@ ubuntuがインストール済みであること。
   
 - コンテナに入る  
   $ docker exec -it コンテナ名 bash  
-  $ docker exec -it コンテナ名 sh  
+  $ docker exec -it コンテナ名 sh
+
+- 全てのimageをexport
+
+  $ docker save $(docker images --format "{{.Repository}}:{{.Tag}}") > dockerimages.tar
+
+- imageをimport
+
+  $ docker load < dockerimages.tar
   
   ---
 
