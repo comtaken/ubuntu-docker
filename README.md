@@ -22,7 +22,7 @@ ubuntuがインストール済みであること。
 
    1. docker-compose.ymlの書き換え  
    $ vim ./docker-compose.yml  
-   1. スクリプト実行  
+   1. スクリプト実行 ※Ubuntuのみ  
    $ ./autosetup.sh
    1. webにアクセスしてhtml/index.htmlが見えているか確認  
    http://アドレス:1080  
