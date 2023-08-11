@@ -86,4 +86,4 @@ mysql -h IPアドレス -P 3306 -u root -p
 http://IPアドレス:4040/ 
 
 # その他  
-  - phpmyadminはサーバー名空白でもログイン出来ました。
+  - phpmyadminはサーバー名空白でもログイン可能。
