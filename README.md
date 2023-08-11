@@ -25,7 +25,12 @@ ubuntuがインストール済みであること。
    1. スクリプト実行 ※Ubuntuのみ  
    $ ./autosetup.sh
    1. webにアクセスしてhtml/index.htmlが見えているか確認  
-   http://アドレス:1080  
+   http://アドレス:1080
+   1. phpmyadminのコンテナに入り/sessionsの所有権を変更する
+
+      $ docker exec -it コンテナ名 bash
+
+      $ chown -R www-data:www-data sessions
    ---
 
 
