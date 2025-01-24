@@ -30,7 +30,7 @@ ubuntuがインストール済みであること。
 
       $ docker exec -it コンテナ名 bash
 
-      $ chown -R www-data:www-data sessions
+      $ chown -R www-data:www-data /sessions
    ---
 
 
