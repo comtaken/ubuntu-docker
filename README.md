@@ -20,7 +20,7 @@ ubuntuがインストール済みであること。
   1. **.gitを削除（dockerのビルドで余計な変更履歴が残るためここで管理下から外しておく）**  
    $ rm -rf .git    
 
-   1. docker-compose.ymlの書き換え  
+   1. docker-compose.ymlのユーザー名パス書き換え  
    $ vim ./docker-compose.yml  
    1. スクリプト実行 ※Ubuntuのみ  
    $ ./autosetup.sh
